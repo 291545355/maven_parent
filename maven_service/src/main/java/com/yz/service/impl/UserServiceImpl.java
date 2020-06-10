@@ -18,6 +18,7 @@ public class UserServiceImpl implements IUserService {
 
     @Override
     public User findById(int id) {
+        System.out.println("UserServiceImpl : " + id);
         return userDao.findById(id);
     }
 }
