@@ -23,6 +23,7 @@ public class UserController {
     @ResponseBody
     public User findById(int id){
         User user = userService.findById(id);
+        System.out.println("id查询到的数据 : " + user);
         System.out.println("user : " + user);
         return user;
     }
